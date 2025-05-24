@@ -1,22 +1,13 @@
-# Identação: 
+# Identação em Python
 
-"""
-Documentação Python (2.1.8): 
+# O que é identação?
+# Identação é o espaço colocado no início das linhas do código.
+# Em Python, a identação é obrigatória para definir blocos de código.
 
-"O espaço em branco (espaços e tabulações) no início de uma linha lógica é usado para calcular o nível de indentação da linha, que por sua vez 
-é usado para determinar o agrupamento de instruções."
+# Por que isso é importante?
+# O Python usa a identação para saber quais comandos pertencem a qual bloco (por exemplo, dentro de funções, if, loops, etc).
 
-Ou seja, a identação serve para que o interpretador identifique blocos lógicos em seu código. 
-
-Tabulações: Conjunto de espaços, podendo variar de um a oito espaços. 
-
-O padrão de identação para criar um bloco de código, é de quatro espaços. Desta forma, usar de tabulações no código, torna-se uma má pratica de 
-programação por conta da variação de espaços em diferentes sistemas/interpretadores.
-
-"""
-
-
-# Exemplo Correto:
+# Exemplo correto de identação:
 nome = 'Emanoel'
 
 def imprimir_nome(nome):
@@ -25,29 +16,37 @@ def imprimir_nome(nome):
     else:
         print("Nome não atribuído")
 
-"""
-Não se preocupe em entender o comportamento deste código, apenas em observar como ele está espaçado.
-Veja que as palavras "if" e "else", estão com o mesmo espaçamento. Assim como a palavra "print" nas duas linhas que aparece, está no mesmo espaçamento. 
+# Veja:
+# - A função 'imprimir_nome' tem tudo que está dentro dela com 4 espaços à direita.
+# - O 'if' e o 'else' também têm seus comandos identados (com 4 espaços).
 
-Isto é o que chamamos de bloco. O primeiro "print" está dentro do bloco "if", já o segundo, no "else". Enquanto ambos, estão dentro do bloco "def".
-"""
-
-# Exemplo incorreto:
+# Exemplo incorreto de identação:
 numero = 2025
 def imprimir_numero(numero):
-print(numero)
+print(numero)  # <-- ERRO! Não está identado.
+
+# O erro acima acontece porque o Python espera que tudo dentro da função esteja identado.
+# Se rodar esse código, verá um erro assim:
+# IndentationError: expected an indented block after function definition
+
+# Dicas:
+# - Sempre use 4 espaços para identar (não use TAB).
+# - Não misture espaços e TABs.
+# - Todo bloco de código (função, if, for, etc) deve ser identado.
 
 """
-Novamente, não se preocupe em entender o comportamento do código. Apenas observe que desta vez, o texto "print" não está com espaçamento, logo, não está 
-dentro do bloco "def".
+Documentação Python (2.1.8):
 
-Quando você iniciar a execução deste arquivo, o seguinte erro será exposto no seu terminal: 
+"O espaço em branco (espaços e tabulações) no início de uma linha lógica é usado para calcular o nível de indentação da linha, que por sua vez 
+é usado para determinar o agrupamento de instruções."
 
-    IndentationError: expected an indented block after function definition on line nº
-"""
+Ou seja, a identação serve para que o interpretador identifique blocos lógicos em seu código.
 
+Tabulações: Conjunto de espaços, podendo variar de um a oito espaços.
 
-"""
+O padrão de identação para criar um bloco de código, é de quatro espaços. Desta forma, usar de tabulações no código, torna-se uma má prática de 
+programação por conta da variação de espaços em diferentes sistemas/interpretadores.
+
 Desta forma, tome cuidado para não misturar tabulações com espaços e garanta que seus blocos de códigos estão devidamente espaçados, caso contrário, 
-o erro "IdentationError" será retornado em seu terminal.  
+o erro "IndentationError" será retornado em seu terminal.
 """

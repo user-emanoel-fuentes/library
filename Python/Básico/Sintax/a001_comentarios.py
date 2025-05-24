@@ -1,48 +1,54 @@
+# ===========================================================
+# Comentários em Python
+# ===========================================================
+
 """
-Comentários: 
+O que são comentários?
 
-Os comentários em códigos, fornecem explicações e informações adicionais que complementam a regra de negócio aplicada, facilitando a
-intepretação do código.
+Comentários são textos no código que servem para explicar o que ele faz.
+Eles ajudam outras pessoas (e você mesmo no futuro) a entender o código.
 
-Segue uma lista de benefícios por se utilizar os comentários: 
+Por que usar comentários?
 
-    - Facilita compreensão
-    - Auxilia na manutenção
-    - Documentação interna
-    - Evita mal entendido
-    - Permite depuração
+    - Facilitam a compreensão do código
+    - Ajudam na manutenção e atualização
+    - Servem como documentação interna
+    - Evitam mal-entendidos
+    - Ajudam na depuração (encontrar erros)
 
-obs: Os comentários são ignorados pelo interpretador de código.     
+Obs: Comentários são ignorados pelo Python, ou seja, não afetam o funcionamento do programa.
 """
 
-# Em python, podemos utilizar cerquilha/hastag (#), para comentários de linha única.
+# -----------------------------------------------------------
+# Como fazer comentários em Python?
+# -----------------------------------------------------------
 
+# 1. Comentário de linha única: use o símbolo #
+# Exemplo:
+# Este é um comentário de linha única.
+
+# 2. Comentário de múltiplas linhas: use três aspas simples (''') ou duplas (""")
 '''
-Também podemos usar três aspas simples ou duplas para comentários multilinha. 
-'''      
-
-# EXEMPLO 1
-
-'''
-E
-X
-E
-M
-P
-L
-O
-
-2
+Este é um comentário
+de múltiplas linhas.
+Você pode escrever várias linhas aqui.
 '''
 
 """
-E
-X
-E
-M
-P
-L
-O
-
-3
+Outro exemplo de
+comentário de múltiplas linhas.
 """
+
+# -----------------------------------------------------------
+# Exemplos práticos
+# -----------------------------------------------------------
+
+# EXEMPLO 1: Comentário de linha única explicando o código
+print("Olá, mundo!")  # Este comando exibe uma mensagem na tela
+
+# EXEMPLO 2: Comentário de múltiplas linhas antes de um bloco de código
+'''
+O bloco abaixo faz uma saudação personalizada.
+'''
+nome = "Maria"
+print(f"Olá, {nome}!")
